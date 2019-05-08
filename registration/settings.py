@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'registration.urls'
@@ -121,8 +122,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+<<<<<<< HEAD
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+=======
+>>>>>>> 4eef233e5c511a9792dca7d91d0a81e0f1ddb7e7
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
@@ -132,6 +136,10 @@ STATICFILES_DIRS = (
 )
 
 
+<<<<<<< HEAD
+=======
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+>>>>>>> 4eef233e5c511a9792dca7d91d0a81e0f1ddb7e7
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
