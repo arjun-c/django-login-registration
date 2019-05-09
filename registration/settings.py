@@ -119,9 +119,11 @@ USE_L10N = True
 USE_TZ = True
 
 
+<<<< HEAD
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+=======
+>>>>>>> 4eef233e5c511a9792dca7d91d0a81e0f1ddb7e7
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
@@ -131,6 +133,10 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+<<<<<<< HEAD
+=======
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+>>>>>>> 4eef233e5c511a9792dca7d91d0a81e0f1ddb7e7
 
 # Configure Django App for Heroku.
 import django_heroku
