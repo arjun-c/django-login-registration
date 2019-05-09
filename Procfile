@@ -1,1 +1,1 @@
-web: gunicorn task12345.wsgi --log-file -
+web: gunicorn project-task.djangoherokuapp.wsgi --log-file -
