@@ -2,6 +2,3 @@ Django==2.2.1
 pytz==2019.1
 sqlparse==0.3.0
 whitenoise==4.1.2
-=======
-whitenoise
->>>>>>> 4eef233e5c511a9792dca7d91d0a81e0f1ddb7e7
