@@ -1,1 +1,1 @@
-web: gunicorn task12345.wsgi --log-file -
+web: gunicorn registration.wsgi --log-file -
